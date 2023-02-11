@@ -2,7 +2,7 @@
 import { h, ref, Component } from 'vue';
 import {darkTheme, NIcon} from 'naive-ui';
 import type { MenuOption } from 'naive-ui';
-import { RouterLink } from 'vue-router';
+// import { RouterLink } from 'vue-router';
 import {
   BookOutline as BookIcon,
   PersonCircleOutline as UserIcon,

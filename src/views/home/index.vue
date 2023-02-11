@@ -1,15 +1,18 @@
 <script setup lang="ts">
-import {onMounted, ref} from 'vue';
-const value = ref<string>('50');
-import {SongRequest} from '@/api/index';
+import {SongRequest} from '@/api';
 import {TopSongerListItem} from "@/types/song";
+import {onMounted, ref} from 'vue';
 
-function requestClick() {
-  const val:string|number =  value.value;
-  SongRequest.getSongItemById(val).then(res=> {
-    console.log(res);
-  });
-}
+
+
+// const value = ref<string>('50');
+
+// function requestClick() {
+//   const val:string|number =  value.value;
+//   SongRequest.getSongItemById(val).then(res=> {
+//     console.log(res);
+//   });
+// }
 
 const songerList = ref<TopSongerListItem[]|[]>([]);
 
